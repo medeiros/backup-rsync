@@ -8,7 +8,6 @@ usage: backup-rsync [dev-mount] [src-path] [dest-path]
   exit 1
 }
 
-
 [ $# -ne 3  ] && help
 
 dev_mount=$1
