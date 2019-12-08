@@ -1,6 +1,10 @@
 # backup-rsync
 
-Solution to backup of my personal files (Archlinux distro).
+Simple backup script using linux `rsync` application.
+
+The destination is mounted; the required data is copied/updated; the detination is then unmounted.
+
+Tested in Archlinux. The only requirement is to have `rsync` installed.
 
 ## Usage
 
