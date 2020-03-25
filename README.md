@@ -35,6 +35,6 @@ Crontab usage:
 
 ### Example
 
-	./backup-rsync.sh /dev/sdb1 /home/user /home/user/tmp/pendrive 
+	./backup-rsync.sh /dev/sdb1 /home/user /home/user/tmp/flashdrive 
 
 
