@@ -18,7 +18,7 @@ script_home=$(cd $(dirname $0) && pwd)
 mount $dev_mount $dest_path 
 
 if grep -qs $dest_path /proc/mounts; then
-  rsync -rv --update --exclude-from "$script_home/backup-rsync-exclude-list" $src_path/ $dest_path --log-file=$script_home/backup-rsync.log
+  rsync -rv --update --exclude-from "$script_home/backup-rsync-exclude-list" $src_path/ $dest_path --log-file=$script_home/backup-rsync.log || true
   cp $script_home/backup-rsync.log $dest_path
   umount $dest_path
 fi
